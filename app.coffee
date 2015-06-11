@@ -6,4 +6,4 @@ app.use cors()
 app.get "/", (req, res) ->
   request req.query.url, (err, resp, body) ->
     res.send body
-app.listen 3000
+app.listen process.env.PORT or 3005
