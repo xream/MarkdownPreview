@@ -4,16 +4,14 @@ html(lang="zh")
     meta(charset="utf-8")
     title HTML Preview(markdown to html) - Editor.md
     link(rel="stylesheet", href="bower_components/editor.md/css/editormd.preview.min.css")
+    link(rel="stylesheet", href="bower_components/bootstrap/dist/css/bootstrap.min.css")
     link(rel="shortcut icon", href="bower_components/editor.md/images/logos/editormd-logo-320x320.png", type="image/x-icon")
-    style.
-      .editormd-html-preview {
-      width: 90%;
-      margin: 0 auto;
-      }
   body
-    #layout
-      #test-editormd-view
-        textarea(style="display:none;", name="test-editormd-markdown-doc")
+    .container-fluid
+      .col-md-1.col-lg-2
+      .col-md-10.col-lg-8
+        #test-editormd-view
+      .col-md-1.col-lg-2
     script(src="bower_components/jquery/dist/jquery.min.js")
     script(src="bower_components/editor.md/lib/marked.min.js")
     script(src="bower_components/editor.md/lib/prettify.min.js")
